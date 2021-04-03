@@ -1,7 +1,6 @@
 package paserafim.springframework.sfgpetclinic.services.map;
 
 import org.springframework.stereotype.Service;
-import paserafim.springframework.sfgpetclinic.model.Owner;
 import paserafim.springframework.sfgpetclinic.model.Vet;
 import paserafim.springframework.sfgpetclinic.services.VetService;
 
