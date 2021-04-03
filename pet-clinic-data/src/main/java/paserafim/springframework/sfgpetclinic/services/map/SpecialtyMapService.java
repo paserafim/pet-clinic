@@ -1,11 +1,13 @@
 package paserafim.springframework.sfgpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import paserafim.springframework.sfgpetclinic.model.Specialty;
-import paserafim.springframework.sfgpetclinic.services.SpecialtiesService;
+import paserafim.springframework.sfgpetclinic.services.SpecialtyService;
 
 import java.util.Set;
 
-public class SpecialtyMapService extends AbstractMapService<Specialty, Long> implements SpecialtiesService {
+@Service
+public class SpecialtyMapService extends AbstractMapService<Specialty, Long> implements SpecialtyService {
     @Override
     public Set<Specialty> findAll() {
         return super.findAll();
@@ -13,7 +15,7 @@ public class SpecialtyMapService extends AbstractMapService<Specialty, Long> imp
 
     @Override
     public void deleteById(Long id) {
-
+        super.deleteById(id);
     }
 
     @Override
@@ -23,7 +25,7 @@ public class SpecialtyMapService extends AbstractMapService<Specialty, Long> imp
 
     @Override
     public Specialty save(Specialty object) {
-        return save(object);
+        return super.save(object);
     }
 
     @Override
